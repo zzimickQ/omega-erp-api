@@ -1,4 +1,4 @@
-package org.omega.omegaerp.controllers.reader;
+package org.omega.omegaerp.controllers.readers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

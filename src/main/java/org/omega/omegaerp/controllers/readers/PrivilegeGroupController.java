@@ -1,4 +1,4 @@
-package org.omega.omegaerp.controllers.reader;
+package org.omega.omegaerp.controllers.readers;
 
 /**
  * Created by Quatra on 12/26/2018.
