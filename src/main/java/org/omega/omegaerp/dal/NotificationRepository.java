@@ -4,10 +4,12 @@ import org.omega.omegaerp.models.Notification;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * Created by Heka on 12/26/2018.
  */
 @Repository
-public interface NotificationRepostary extends CrudRepository<Notification, Integer>{
-
+public interface NotificationRepository extends CrudRepository<Notification, Integer>{
+    List<Notification> findAllByUserId(Integer id);
 }

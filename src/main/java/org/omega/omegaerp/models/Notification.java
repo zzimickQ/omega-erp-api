@@ -26,10 +26,16 @@ public class Notification {
     }
 
 
-    public Notification(int id, String title, String details, Date postdate, User source) {
+    public Notification(String title, String details, User source) {
         super();
+        this.title = title;
+        this.details = details;
+        this.postdate = (Date) new java.util.Date();
+        this.source = source;
+    }
 
-        this.id = id;
+    public Notification(String title, String details) {
+        super();
         this.title = title;
         this.details = details;
         this.postdate = postdate;

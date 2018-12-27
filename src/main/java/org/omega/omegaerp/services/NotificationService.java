@@ -1,12 +1,14 @@
 package org.omega.omegaerp.services;
 
-import org.omega.omegaerp.dal.NotificationRepostary;
+import org.omega.omegaerp.dal.NotificationRepository;
+import org.omega.omegaerp.dal.UserNotificationRepository;
 import org.omega.omegaerp.models.Notification;
+import org.omega.omegaerp.models.User;
+import org.omega.omegaerp.models.UserNotification;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -16,38 +18,41 @@ import java.util.List;
 public class NotificationService {
 
     @Autowired
-     private NotificationRepostary notificationRepostary;
+    private NotificationRepository notificationRepository;
 
-    private List<Notification> notifications = new ArrayList<>(Arrays.asList(
 
-//            new Notification()
-    ));
-    public List<Notification> getNotifications(){
-        List<Notification> notifications = new ArrayList<>();
-        notificationRepostary.findAll()
-                .forEach(notifications::add);
-        return notifications;
+    @Autowired
+    private UserNotificationRepository userNotificationRepository;
+
+    public List<UserNotification> getNotifications(User forUser) {
+        return userNotificationRepository
+                .findAllByUserId(forUser.getId());
     }
 
-    public Notification getNotification(int id) {
-        return notificationRepostary.findById(id).get();
+    public List<Notification> getSentNotifications(User forUser) {
+        return notificationRepository.findAllByUserId(forUser.getId());
+    }
+
+    public void sendNotification(Notification notification, List<User> forUsers) {
+        notificationRepository.save(notification);
+        List<UserNotification> notifs = new ArrayList<>();
+        for (User user : forUsers) {
+            UserNotification uNotif = new UserNotification();
+            uNotif.setUser(user);
+            uNotif.setNotification(notification);
+            notifs.add(uNotif);
+        }
+        userNotificationRepository.saveAll(notifs);
+    }
+
+    public void updateNotification(Notification notification) {
+        notificationRepository.save(notification);
     }
 
 
-    public void addNotification (Notification notification){
-       notificationRepostary.save(notification);
+    public void deleteNotification(int id) {
+        notificationRepository.deleteById(id);
     }
-
-
-    public void updateNotification(int id, Notification notification) {
-        notificationRepostary.save(notification);
-    }
-
-
-    public void deleteNotification(int id){
-        notificationRepostary.deleteById(id);
-    }
-
 
 
 }
