@@ -1,8 +1,7 @@
 package org.omega.omegaerp.models;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by Kass on 12/26/2018.
@@ -10,7 +9,9 @@ import javax.persistence.OneToOne;
 @Entity
 public class UserAccessMac {
     @Id
-    @OneToOne
-    private User userIdRel;
+    @ManyToOne
+    private User user;
+
     private String macAddress;
+
 }
