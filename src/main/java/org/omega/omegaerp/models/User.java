@@ -18,7 +18,7 @@ public class User {
 
     @Id
     @GeneratedValue
-    private int id;
+    private int userId;
 
     private String employeeId;
 
