@@ -18,7 +18,7 @@ public class User {
 
     @Id
     @GeneratedValue
-    private int userId;
+    private Integer userId;
 
     private String employeeId;
 
@@ -40,5 +40,14 @@ public class User {
     @OneToMany
     private List<Privilege> privileges;
 
+    public JobPosition getJobPosition() {
+        return jobPosition;
+    }
+    public List<Privilege> getPrivileges() {
+        return privileges;
+    }
+    public Integer getId() {
+        return userId;
+    }
 
 }

@@ -20,4 +20,6 @@ public class JobPosition {
     private JobCategory jobCategory;
 
     private int jobLevel = 0;
+
+
 }
