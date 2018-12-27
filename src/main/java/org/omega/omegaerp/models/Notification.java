@@ -1,6 +1,5 @@
 package org.omega.omegaerp.models;
 
-import org.hibernate.annotations.Table;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,10 +20,7 @@ public class Notification {
     private Date postdate;
     private User source;
 
-    public Notification(){
-
-    }
-
+    public Notification() {  }
 
     public Notification(String title, String details, User source) {
         super();
@@ -38,8 +34,7 @@ public class Notification {
         super();
         this.title = title;
         this.details = details;
-        this.postdate = postdate;
-        this.source = source;
+        this.postdate = (Date) new java.util.Date();
     }
 
     public int getId() {
