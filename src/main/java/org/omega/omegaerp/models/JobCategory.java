@@ -1,6 +1,7 @@
 package org.omega.omegaerp.models;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by Kass on 12/26/2018.
@@ -9,6 +10,12 @@ import javax.persistence.*;
 public class JobCategory {
     @Id
     @GeneratedValue
-    private int jobCatId ;
-    private String catName;
+    private Integer id ;
+    private String name;
+    private String description;
+
+    @OneToMany
+    private List<JobPosition> jobPositions;
+
+
 }

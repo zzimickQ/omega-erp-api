@@ -9,17 +9,26 @@ import java.util.List;
 public class JobPosition {
     @Id
     @GeneratedValue
-    private int jobPositionId;
+    private Integer id;
 
     @OneToMany
     private List<User> users;
 
-    private String jobTitle;
+    private String title;
+    private String description;
 
     @ManyToOne
-    private JobCategory jobCategory;
+    private JobCategory category;
 
-    private int jobLevel = 0;
+    private Integer level = 0;
 
+    @OneToMany
+    private List<JobPosition> supervises;
+
+    @ManyToOne
+    private List<JobPosition> supervisedBy;
+
+    @ManyToMany
+    private List<Privilege> defaultPrivileges;
 
 }
