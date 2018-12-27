@@ -9,9 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
-/**
- * Created by Kass on 12/27/2018.
- */
+
 @Service
 public class UserService {
     @Autowired
@@ -24,8 +22,9 @@ public class UserService {
         Optional<Privilege> privilege = privilegeRepository.findById(privilegeId);
         if(user.isPresent() && privilege.isPresent()) {
             user.get().getPrivileges().add(privilege.get());
-        } else {
-            // throw
+        }
+        else {
+            //throw
         }
     }
 
