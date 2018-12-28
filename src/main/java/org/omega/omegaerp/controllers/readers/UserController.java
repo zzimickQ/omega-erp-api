@@ -9,11 +9,14 @@ import org.omega.omegaerp.exception.PrivilegeViolationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by Kass on 12/26/2018.
  */
+@RestController
 public class UserController{
+
     @Autowired
     private PrivilegeService privilegeService;
     @Autowired
@@ -22,12 +25,6 @@ public class UserController{
     String notFoundExceptionHandler(UserNotFoundExceptoin e){
         return e.getMessage();
     }
-
-    @ExceptionHandler(PrivilegeViolationException.class)
-    String privilegeExceptionHandler(PrivilegeViolationException e){
-        return "you dont have privilege for " + e.getMessage();
-    }
-
 
     @RequestMapping("users/findallusers")
     public Iterable<User> getAllUsers() throws PrivilegeViolationException {
