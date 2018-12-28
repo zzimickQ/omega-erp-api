@@ -11,6 +11,6 @@ public class JobPositionNotFoundException extends Exception {
 
     public JobPositionNotFoundException(int id) {
 
-        super("error code 1: job poisiton of id '" + id + "' not found");
+        super("error code 1: job position of id '" + id + "' not found");
     }
 }

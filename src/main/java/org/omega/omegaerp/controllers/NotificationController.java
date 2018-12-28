@@ -15,6 +15,7 @@ public class NotificationController {
 
     @Autowired
     private NotificationService notificationService;
+/*
 
     @RequestMapping("/notif")
     public List<Notification> allnotif(){
@@ -46,6 +47,7 @@ public class NotificationController {
     public void deleteNotification(@PathVariable int id){
         notificationService.deleteNotification(id);
     }
+*/
 
 
 
