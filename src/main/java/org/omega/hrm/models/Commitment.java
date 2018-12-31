@@ -23,11 +23,11 @@ public class Commitment {
 
     private Integer type;
     private String discription;
-    private Float deptamount;
+    private Float deptAmount;
     private Float deptpayed;
-    private Date startdate;
-    private Date enddate;
-    private Integer paymentinterval;
+    private Date startDate;
+    private Date endDate;
+    private Integer paymentInterval;
 
     private Boolean state;
     //is the commitment completed
