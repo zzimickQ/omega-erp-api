@@ -8,8 +8,6 @@ import java.util.Date;
 
 /**
  * Created by Quatra on 12/26/2018.
- */
-/**
  * Created by Kass on 12/26/2018.
  */
 @Entity
