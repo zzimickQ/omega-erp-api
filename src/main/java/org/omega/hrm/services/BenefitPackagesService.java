@@ -1,18 +1,19 @@
 package org.omega.hrm.services;
 
 import org.springframework.stereotype.Service;
+import org.omega.hrm.models.*;
 
 /**
  * Created by Kass on 12/31/2018.
  */
 @Service
 public abstract class BenefitPackagesService {
-    public abstract Applicants createApplicants(Applicants applicants);
+    public abstract BenefitPackages createBenefitPackages(BenefitPackages benefitPackages);
 
-    public abstract Applicants getApplicants();
+    public abstract BenefitPackages getBenefitPackages();
 
-    public abstract void deleteApplicants(Integer id);
+    public abstract void deleteBenefitPackages(Integer id);
 
-    public abstract Applicants editApplicants(Integer id,Applicants applicants);
+    public abstract BenefitPackages editBenefitPackages(Integer id, BenefitPackages benefitPackages);
 
 }

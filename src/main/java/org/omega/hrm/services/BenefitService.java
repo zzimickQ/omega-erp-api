@@ -7,13 +7,13 @@ import org.springframework.stereotype.Service;
  * Created by Kass on 12/31/2018.
  */
 @Service
-public class BenefitService {
-    public abstract Benefit createApplicants(Applicants applicants);
+public abstract class BenefitService {
+    public abstract Benefit createBenefit(Benefit benefit);
 
-    public abstract Applicants getApplicants();
+    public abstract Benefit getBenefit();
 
-    public abstract void deleteApplicants(Integer id);
+    public abstract void deleteBenefit(Integer id);
 
-    public abstract Applicants editApplicants(Integer id,Applicants applicants);
+    public abstract Benefit editBenefit(Integer id,Benefit benefit);
 
 }

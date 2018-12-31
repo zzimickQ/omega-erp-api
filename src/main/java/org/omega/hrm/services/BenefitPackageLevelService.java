@@ -1,5 +1,6 @@
 package org.omega.hrm.services;
 
+import org.omega.hrm.models.BenefitPackageLevel;
 import org.springframework.stereotype.Service;
 
 /**
@@ -7,12 +8,14 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public abstract class BenefitPackageLevelService {
-    public abstract Applicants createApplicants(Applicants applicants);
+    public abstract BenefitPackageLevel createBenefitPackageLevel
+            (BenefitPackageLevel applicants);
 
-    public abstract Applicants getApplicants();
+    public abstract BenefitPackageLevel getBenefitPackageLevel();
 
-    public abstract void deleteApplicants(Integer id);
+    public abstract void deleteBenefitPackageLevel(Integer id);
 
-    public abstract Applicants editApplicants(Integer id,Applicants applicants);
+    public abstract BenefitPackageLevel editBenefitPackageLevel
+            (Integer id,BenefitPackageLevel benefitPackageLevel);
 
 }
