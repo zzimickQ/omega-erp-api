@@ -1,4 +1,4 @@
-package org.omega.hrm.model;
+package org.omega.hrm.models;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -19,7 +19,7 @@ public class Vacancy {
     private Integer id;
 
     @ManyToOne
-    private Requisition requisition;
+    private PersonnelRequisition requisition;
 
     private String recruitFrom;
     //this recruit form is a desicion made by human resource to hire from
