@@ -16,7 +16,7 @@ public class BenefitPackageWithBenefitValue {
     private List<Benefit> benefits;
 
     @ManyToMany
-    private List<BenefitPackages> benefitPackages;
+    private List<BenefitPackage> benefitPackages;
 
     private float amount;
 
@@ -38,11 +38,11 @@ public class BenefitPackageWithBenefitValue {
         this.benefits = benefits;
     }
 
-    public List<BenefitPackages> getBenefitPackages() {
+    public List<BenefitPackage> getBenefitPackages() {
         return benefitPackages;
     }
 
-    public void setBenefitPackages(List<BenefitPackages> benefitPackages) {
+    public void setBenefitPackages(List<BenefitPackage> benefitPackages) {
         this.benefitPackages = benefitPackages;
     }
 

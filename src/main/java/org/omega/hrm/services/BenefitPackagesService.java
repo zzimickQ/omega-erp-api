@@ -8,12 +8,12 @@ import org.omega.hrm.models.*;
  */
 @Service
 public abstract class BenefitPackagesService {
-    public abstract BenefitPackages createBenefitPackages(BenefitPackages benefitPackages);
+    public abstract BenefitPackage createBenefitPackages(BenefitPackage benefitPackage);
 
-    public abstract BenefitPackages getBenefitPackages();
+    public abstract BenefitPackage getBenefitPackages();
 
     public abstract void deleteBenefitPackages(Integer id);
 
-    public abstract BenefitPackages editBenefitPackages(Integer id, BenefitPackages benefitPackages);
+    public abstract BenefitPackage editBenefitPackages(Integer id, BenefitPackage benefitPackage);
 
 }
