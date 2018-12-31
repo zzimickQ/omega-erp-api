@@ -7,7 +7,7 @@ import java.util.Date;
  * Created by Kass on 12/27/2018.
  */
 @Entity
-public class LaborLawValues {
+public class LaborLaw {
 
     private Integer id;
     private String title;

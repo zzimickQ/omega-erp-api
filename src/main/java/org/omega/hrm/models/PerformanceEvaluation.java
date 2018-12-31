@@ -9,7 +9,7 @@ import java.util.List;
  * Created by Kass on 12/27/2018.
  */
 @Entity
-public class PerformanceEvaluationReport {
+public class PerformanceEvaluation {
 
 
     private Integer id;
