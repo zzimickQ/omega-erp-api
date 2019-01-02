@@ -8,15 +8,15 @@ import javax.persistence.Id;
  * Created by Heka on 1/1/2019.
  */
 @Entity
-public class PhoneNumbers {
+public class Schedule {
 
     @Id
     @GeneratedValue
     private Integer id;
 
-    private Integer refersTo;
-    private String phoneNumber;
-    private String type;
+    private String scheduleType;
+    private String repeatsEvery;
+
 
 
 }

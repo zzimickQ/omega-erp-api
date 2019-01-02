@@ -1,10 +1,33 @@
 package org.omega.hrm.models;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 /**
- * Created by Kass on 12/27/2018.
+ * Created by Heka on 12/31/2018.
  */
 @Entity
 public class Address {
+
+    @Id
+    @GeneratedValue
+    private Integer id;
+
+    @ManyToOne
+    private Employee employee;
+
+    private Integer refersTo;
+    private String country="Ethiopia";
+    private String city;
+    private String zone;
+    private String subCity;
+    private String wereda;
+    private String kebele;
+    private String houseNumber;
+    private String streetName;
+    private String blockNumber;
+
+
 }

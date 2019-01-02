@@ -22,7 +22,7 @@ public class Suspention {
     private org.omega.hrm.model.Employee employee;
 
     @ManyToOne
-    private RequestedByEmployee requestedByEmployee;
+    private Employee requestedByEmployee;
 
     private Boolean salaryallowance;
     private Integer causeforsuspention;
