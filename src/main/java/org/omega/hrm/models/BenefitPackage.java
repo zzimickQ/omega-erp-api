@@ -6,7 +6,7 @@ import javax.persistence.*;
  * Created by Kass on 12/27/2018.
  */
 @Entity
-public class BenefitPackages {
+public class BenefitPackage {
     @Id
     @GeneratedValue
     private Integer id ;

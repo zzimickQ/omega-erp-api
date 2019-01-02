@@ -19,7 +19,7 @@ public class Suspention {
     private Integer id;
 
     @ManyToOne
-    private org.omega.hrm.model.Employee employee;
+    private Employee employee;
 
     @ManyToOne
     private Employee requestedByEmployee;
