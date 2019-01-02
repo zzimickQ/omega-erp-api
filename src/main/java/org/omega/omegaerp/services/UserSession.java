@@ -14,7 +14,7 @@ public class UserSession {
     @Autowired
     private HttpSession userSessionHolder;
 
-    public org.omega.omegaerp.models.User getUser() {
+    public User getUser() {
 
         return (User) userSessionHolder.getAttribute("loggedUser");
 
