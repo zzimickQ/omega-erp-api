@@ -10,7 +10,6 @@ import javax.persistence.Id;
 @Entity
 public class PhoneNumbers {
 
-<<<<<<< HEAD
     @Id
     @GeneratedValue
     private Integer id;
@@ -20,6 +19,4 @@ public class PhoneNumbers {
     private String type;
 
 
-=======
->>>>>>> ae4238b8cc1bcbc85299b3e88ed3ff27473c58c4
 }

@@ -27,7 +27,7 @@ public class EmploymentSequence {
     private Applicants applicants;
 
     @ManyToOne
-    private Employees employees;
+    private Employee employee;
 
     @ManyToOne
     private EmploymentInfo employmentInfo;

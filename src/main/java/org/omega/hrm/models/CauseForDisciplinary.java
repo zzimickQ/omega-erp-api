@@ -17,7 +17,7 @@ public class CauseForDisciplinary {
     private Integer id;
 
     @ManyToMany
-    private List<EmployeeDesciplinaryReports> employeeDesciplinaryReports;
+    private List<EmployeeDisciplinaryReport> employeeDesciplinaryReports;
     private Integer causeType;
     private Date startDate;
     private Date endDate;
@@ -31,11 +31,11 @@ public class CauseForDisciplinary {
         this.id = id;
     }
 
-    public List<EmployeeDesciplinaryReports> getEmployeeDesciplinaryReports() {
+    public List<EmployeeDisciplinaryReport> getEmployeeDesciplinaryReports() {
         return employeeDesciplinaryReports;
     }
 
-    public void setEmployeeDesciplinaryReporrtses(List<EmployeeDesciplinaryReports> employeeDesciplinaryReports) {
+    public void setEmployeeDesciplinaryReports(List<EmployeeDisciplinaryReport> employeeDesciplinaryReports) {
         this.employeeDesciplinaryReports = employeeDesciplinaryReports;
     }
 

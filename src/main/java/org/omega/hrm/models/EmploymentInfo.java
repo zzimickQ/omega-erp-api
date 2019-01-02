@@ -30,7 +30,7 @@ public class EmploymentInfo {
     private BenefitPackage benefitPackageId;
 
     @OneToMany
-    private List<Schedul> scheduleId;
+    private List<Schedule> scheduleId;
 
     public Integer getId() {
         return id;
@@ -96,11 +96,4 @@ public class EmploymentInfo {
         this.benefitPackageId = benefitPackageId;
     }
 
-    public List<Schedul> getScheduleId() {
-        return scheduleId;
-    }
-
-    public void setScheduleId(List<Schedul> scheduleId) {
-        this.scheduleId = scheduleId;
-    }
 }

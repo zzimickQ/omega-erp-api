@@ -1,6 +1,5 @@
 package org.omega.hrm.models;
 
-import org.omega.hrm.model.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

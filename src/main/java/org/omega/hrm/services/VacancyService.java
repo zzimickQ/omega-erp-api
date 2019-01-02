@@ -1,6 +1,6 @@
 package org.omega.hrm.services;
 
-import org.omega.hrm.model.Vacancy;
+import org.omega.hrm.models.Vacancy;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

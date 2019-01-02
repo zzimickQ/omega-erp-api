@@ -27,7 +27,7 @@ public class SmppTest implements SessionStateListener {
                     new SMPPSession("127.0.0.1", 2775, bp), this
             );
 
-            sessionContext.getStateProcessor().
+//            sessionContext.getStateProcessor().
 
         } catch (IOException e) {
             e.printStackTrace();

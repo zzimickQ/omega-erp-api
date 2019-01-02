@@ -1,6 +1,5 @@
 package org.omega.hrm.models;
 
-import org.omega.hrm.model.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,7 +17,7 @@ public class EmployeeEmergancyContact {
     private Integer id;
 
     @ManyToOne
-    private org.omega.hrm.model.Employee employee;
+    private Employee employee;
     private String firstname;
     private String fathername;
     private String grandfathername;

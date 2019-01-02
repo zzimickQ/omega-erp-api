@@ -25,10 +25,10 @@ public class ContractEmploymentEndExtentionHistory {
     private Float toSalary;
 
     @ManyToOne
-    private BenefitPackages toBenefitPackages;
+    private BenefitPackage toBenefitPackages;
 
     @ManyToOne
-    private BenefitPackages fromBenefitPackages;
+    private BenefitPackage fromBenefitPackages;
 
     private String remark;
 

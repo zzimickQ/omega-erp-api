@@ -10,7 +10,7 @@ import java.sql.Date;
  * Created by Heka on 1/1/2019.
  */
 @Entity
-public class Employees {
+public class Employee {
 
     @Id
     @GeneratedValue

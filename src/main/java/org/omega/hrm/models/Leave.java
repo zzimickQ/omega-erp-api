@@ -1,6 +1,5 @@
 package org.omega.hrm.models;
 
-import org.omega.hrm.model.*;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Entity;
@@ -18,12 +17,12 @@ public class Leave {
     private Integer id;
 
     @ManyToOne
-    private org.omega.hrm.model.Employee employee;
+    private Employee employee;
 
     private Integer leavetype;
 
     @ManyToOne
-    private RequstedByEmployee requstedByEmployee;
+    private Employee requstedByEmployee;
     private Boolean state;
     private DateTimeFormat startdate;
     private DateTimeFormat enddate;

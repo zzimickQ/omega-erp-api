@@ -17,7 +17,7 @@ public class JobPositionDocument {
     private Integer id;
 
     @OneToOne
-    private JobPosition jobPosition
+    private JobPosition jobPosition;
     private String docType;
     private boolean mandatory;
     private Integer deadlineDays;
