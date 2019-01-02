@@ -13,6 +13,7 @@ public class UserNotification {
 
     @ManyToOne
     private User user;
+
     @OneToOne
     private Notification notification;
 
