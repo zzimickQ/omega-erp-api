@@ -16,6 +16,7 @@ import java.util.List;
  */
 @Service
 public class NotificationService {
+/*
 
     @Autowired
     private NotificationRepository notificationRepository;
@@ -54,5 +55,6 @@ public class NotificationService {
         notificationRepository.deleteById(id);
     }
 
+*/
 
 }

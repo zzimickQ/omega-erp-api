@@ -11,5 +11,5 @@ import java.util.List;
  */
 @Repository
 public interface NotificationRepository extends CrudRepository<Notification, Integer>{
-    List<Notification> findAllByUserId(Integer id);
+    List<Notification> findAllBySourceUserId(Integer id);
 }

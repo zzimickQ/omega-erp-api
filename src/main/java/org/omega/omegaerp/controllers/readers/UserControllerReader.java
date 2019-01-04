@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by Kass on 12/26/2018.
  */
 @RestController
-public class UserController{
-
+public class UserControllerReader {
+/*
     @Autowired
     private PrivilegeService privilegeService;
     @Autowired
@@ -30,5 +30,5 @@ public class UserController{
     public Iterable<User> getAllUsers() throws PrivilegeViolationException {
         privilegeService.checkPrivilege(Privileges.privilegeId);
         return userService.getAll();
-    }
+    }*/
 }

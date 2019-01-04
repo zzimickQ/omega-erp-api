@@ -11,7 +11,7 @@ import java.util.Optional;
  * Created by Kass on 12/26/2018.
  */
 @Service
-public class JobPosition {
+public class JobPositionService {
     @Autowired
     private JobPositionRepository jobPositionRepository;
 
@@ -30,7 +30,6 @@ public class JobPosition {
         else
             throw new JobPositionNotFoundException(id);
     }
-
 
 
 

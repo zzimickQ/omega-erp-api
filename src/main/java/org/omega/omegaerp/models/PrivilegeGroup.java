@@ -1,9 +1,6 @@
 package org.omega.omegaerp.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,14 +19,8 @@ public class PrivilegeGroup {
     private String description;
 
     @OneToMany
+    @JoinColumn(name = "privilege_group")
     private List<Privilege> privileges = new ArrayList<>();
-
-
-
-
-
-
-
 
     public Integer getId() {
         return id;

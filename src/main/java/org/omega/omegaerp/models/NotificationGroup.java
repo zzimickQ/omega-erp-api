@@ -1,9 +1,6 @@
 package org.omega.omegaerp.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 /**
@@ -17,6 +14,7 @@ public class NotificationGroup {
     private String name;
 
     @OneToMany
+    @JoinColumn(name = "notification_group")
     private List<User> users;
 
     public int getId() {

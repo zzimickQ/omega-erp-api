@@ -13,9 +13,9 @@ import java.util.List;
 @RestController
 public class NotificationController {
 
+/*
     @Autowired
     private NotificationService notificationService;
-/*
 
     @RequestMapping("/notif")
     public List<Notification> allnotif(){

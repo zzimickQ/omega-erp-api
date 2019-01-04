@@ -1,9 +1,7 @@
 package org.omega.omegaerp.models;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Date;
 
 /**
@@ -18,16 +16,19 @@ public class Notification {
     private String title;
     private String details;
     private Date postdate;
-    private User source;
+
+    @ManyToOne
+    @JoinColumn(name = "source_user")
+    private User sourceUser;
 
     public Notification() {  }
 
-    public Notification(String title, String details, User source) {
+    public Notification(String title, String details, User sourceUser) {
         super();
         this.title = title;
         this.details = details;
         this.postdate = (Date) new java.util.Date();
-        this.source = source;
+        this.sourceUser = sourceUser;
     }
 
     public Notification(String title, String details) {
@@ -69,11 +70,11 @@ public class Notification {
         this.postdate = postdate;
     }
 
-    public User getSource() {
-        return source;
+    public User getSourceUser() {
+        return sourceUser;
     }
 
-    public void setSource(User source) {
-        this.source = source;
+    public void setSourceUser(User sourceUser) {
+        this.sourceUser = sourceUser;
     }
 }

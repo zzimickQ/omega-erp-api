@@ -12,9 +12,11 @@ public class UserNotification {
     private Integer id;
 
     @ManyToOne
+    @JoinColumn(name = "user")
     private User user;
 
     @OneToOne
+    @JoinColumn(name = "notification")
     private Notification notification;
 
     private boolean seen = false;

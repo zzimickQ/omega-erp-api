@@ -1,4 +1,4 @@
-package org.omega.omegaerp.controllers.readers;
+package org.omega.omegaerp.controllers.writers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,8 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by Quatra on 12/26/2018.
  */
 @RestController
-//@RequestMapping
-public class PrivilegeController {
+public class PrivilegeControllerWriter {
+
+//    @RequestMapping("/api/privilege/give/{userId}/{privId}")
+
 
 
 }
