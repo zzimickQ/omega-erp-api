@@ -36,6 +36,10 @@ public class JobPosition {
     @JoinColumn(name = "job_position", table = "default_job_position_privileges")
     private List<Privilege> defaultPrivileges;
 
+    public JobPosition(Integer jobPositionId) {
+        this.id = jobPositionId;
+    }
+
     public Integer getId() {
         return id;
     }

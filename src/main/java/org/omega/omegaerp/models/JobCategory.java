@@ -18,6 +18,10 @@ public class JobCategory {
     @JoinColumn(name = "category")
     private List<JobPosition> jobPositions;
 
+    public JobCategory(Integer id) {
+        this.id = id;
+    }
+
 
     public Integer getId() {
         return id;
