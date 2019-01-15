@@ -31,7 +31,6 @@ public class PrivilegeGroupService {
         }
     }
 
-
     public void removePrivilegeFromPrivilegeGroup(Integer privilegeGroupID, Integer privilegeID) {
         Optional<PrivilegeGroup> group = pgRepo.findById(privilegeGroupID);
         Optional<Privilege> privilege = pRepo.findById(privilegeID);
