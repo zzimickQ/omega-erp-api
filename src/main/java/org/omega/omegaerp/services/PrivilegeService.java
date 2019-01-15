@@ -1,7 +1,6 @@
 package org.omega.omegaerp.services;
 
 import org.omega.omegaerp.exception.PrivilegeViolationException;
-import org.omega.omegaerp.models.Privilege;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,12 +10,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class PrivilegeService {
     @Autowired
-    private UserSession userSession;
+    private UserSessionService userSessionService;
 
     public void checkPrivilege(int privilege) throws PrivilegeViolationException {
-        for (Privilege p : userSession.getUser().getPrivileges())
-            if (p.getId() == privilege)
-                return;
+//        for (Privilege p : userSession.getUser().getPrivileges())
+//            if (p.getId() == privilege)
+//                return;
 
         throw new PrivilegeViolationException
                 ("violation of privilege id '" + privilege + "'");
