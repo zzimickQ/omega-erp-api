@@ -1,6 +1,7 @@
 package org.omega.omegaerp.dal;
 
 import org.omega.omegaerp.models.JobPosition;
+import org.omega.omegaerp.models.Privilege;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
@@ -13,4 +14,5 @@ import java.util.List;
 public interface JobPositionRepository extends CrudRepository<JobPosition,Integer> {
     List<JobPosition> findBySupervisor(JobPosition jp);
     List<JobPosition> findByCategoryId(Integer categoryId);
+
 }

@@ -1,7 +1,9 @@
 package org.omega.omegaerp.services;
 
+import org.omega.omegaerp.dal.PrivilegeRepository;
 import org.omega.omegaerp.dal.UserAccessMacRepository;
 import org.omega.omegaerp.dal.UserRepository;
+import org.omega.omegaerp.models.Privilege;
 import org.omega.omegaerp.models.UserAccessMac;
 import org.omega.omegaerp.session.UserSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +24,7 @@ public class UserSessionService {
 
     private static final String USER_LOGIN_SESSION_NAME = "loggedUser";
 
+    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private HttpSession httpSession;
 
@@ -30,8 +33,12 @@ public class UserSessionService {
     @Autowired
     private UserAccessMacRepository userAccessMacRepository;
 
-    public UserSessionService getLoggedUser() {
-        return (UserSessionService) httpSession.getAttribute(USER_LOGIN_SESSION_NAME);
+    @Autowired
+    private PrivilegeRepository privilegeRepository;
+
+
+    public UserSession getLoggedUser() {
+        return (UserSession) httpSession.getAttribute(USER_LOGIN_SESSION_NAME);
     }
 
     public boolean isLoggedIn() {
@@ -71,6 +78,17 @@ public class UserSessionService {
 
     public void logout() {
         httpSession.removeAttribute(USER_LOGIN_SESSION_NAME);
+    }
+
+    public boolean checkUserHasPrivilage(Integer privilegeId) {
+        if ( !isLoggedIn() ) return false;
+        Optional<Privilege> privilegeOptional = privilegeRepository.findById(privilegeId);
+        if (privilegeOptional.isPresent()) {
+            Privilege privilege = privilegeOptional.get();
+            List<User> users = userRepository.findAllByPrivilegesContains(privilege);
+            return !users.isEmpty();
+        }
+        return false;
     }
 
 }
