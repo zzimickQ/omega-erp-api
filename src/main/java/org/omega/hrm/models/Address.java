@@ -14,10 +14,6 @@ public class Address {
     @Id
     @GeneratedValue
     private Integer id;
-
-    @ManyToOne
-    private Employee employee;
-
     private Integer refersTo;
     private String country="Ethiopia";
     private String city;

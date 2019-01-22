@@ -18,8 +18,6 @@ public class Vacancy {
     @GeneratedValue
     private Integer id;
 
-    @ManyToOne
-    private PersonnelRequisition requisition;
 
     private String recruitFrom;
     //this recruit form is a desicion made by human resource to hire from
@@ -32,5 +30,8 @@ public class Vacancy {
     private DateTimeFormat deadLine;
     private Integer reanounce = 0 ;
     private String remark;
+
+    @ManyToOne
+    private PersonnelRequisition requisition;
 
 }
