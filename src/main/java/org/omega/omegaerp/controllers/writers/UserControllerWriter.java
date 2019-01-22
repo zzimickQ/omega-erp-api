@@ -25,10 +25,4 @@ public class UserControllerWriter {
     }
 
 
-=======
-@RequestMapping
-public class UserControllerWriter {
-
->>>>>>> origin/master
-
 }
