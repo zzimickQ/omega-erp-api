@@ -3,6 +3,8 @@ package org.omega.hrm.models;
 import org.omega.omegaerp.models.JobPosition;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import java.util.Date;
 import java.util.List;
@@ -12,22 +14,25 @@ import java.util.List;
  */
 @Entity
 public class PersonnelRequisition {
+    @Id
+    @GeneratedValue
     private Integer id;
     private Date requestDate;
     private Date requestSubmitionDate;
     private Integer requestingDepartment;
-    @ManyToOne
-    private List<Employee> initiatedBy;
 
     @ManyToOne
-    private List<Employee>requested_by_employee;
+    private Employee initiatedBy;
+
+    @ManyToOne
+    private Employee requested_by_employee;
 
     private Integer quantity;
     private String reason_for_request;
     private String employment_type;
 
     @ManyToOne
-    private List<JobPosition> job_position;
+    private JobPosition job_position;
     private String reccruit_from;
     private Integer request_status;
 
@@ -63,22 +68,6 @@ public class PersonnelRequisition {
         this.requestingDepartment = requestingDepartment;
     }
 
-    public List<Employee> getInitiatedBy() {
-        return initiatedBy;
-    }
-
-    public void setInitiatedBy(List<Employee> initiatedBy) {
-        this.initiatedBy = initiatedBy;
-    }
-
-    public List<Employee> getRequested_by_employee() {
-        return requested_by_employee;
-    }
-
-    public void setRequested_by_employee(List<Employee> requested_by_employee) {
-        this.requested_by_employee = requested_by_employee;
-    }
-
     public Integer getQuantity() {
         return quantity;
     }
@@ -103,13 +92,6 @@ public class PersonnelRequisition {
         this.employment_type = employment_type;
     }
 
-    public List<JobPosition> getJob_position() {
-        return job_position;
-    }
-
-    public void setJob_position(List<JobPosition> job_position) {
-        this.job_position = job_position;
-    }
 
     public String getReccruit_from() {
         return reccruit_from;
@@ -125,5 +107,30 @@ public class PersonnelRequisition {
 
     public void setRequest_status(Integer request_status) {
         this.request_status = request_status;
+    }
+
+    public Employee getInitiatedBy() {
+        return initiatedBy;
+    }
+
+    public void setInitiatedBy(Employee initiatedBy) {
+        this.initiatedBy = initiatedBy;
+    }
+
+    public Employee getRequested_by_employee() {
+
+        return requested_by_employee;
+    }
+
+    public void setRequested_by_employee(Employee requested_by_employee) {
+        this.requested_by_employee = requested_by_employee;
+    }
+
+    public JobPosition getJob_position() {
+        return job_position;
+    }
+
+    public void setJob_position(JobPosition job_position) {
+        this.job_position = job_position;
     }
 }

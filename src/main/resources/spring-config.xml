@@ -11,6 +11,8 @@
     <context:component-scan base-package="org.omega.omegaerp.dal" />
     <context:component-scan base-package="org.omega.omegaerp.services" />
     <context:component-scan base-package="org.omega.omegaerp.controllers" />
+    <context:component-scan base-package="org.omega.hrm.models" />
+    <context:component-scan base-package="org.omega.hrm.services" />
 
 
 </beans>

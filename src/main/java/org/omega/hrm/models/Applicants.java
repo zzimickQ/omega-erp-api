@@ -24,6 +24,7 @@ public class Applicants {
     private String g_father_name;
 
     private String sex;
+
     private Date birth_date;
 
     private String email;

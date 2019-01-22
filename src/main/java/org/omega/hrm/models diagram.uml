@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="243.7634740259739" y="270.0">org.omega.hrm.models.EmployeeEmergancyContact</node>
+    <node x="643.763474025974" y="270.0">org.omega.hrm.models.PerformanceEvaluation</node>
+    <node x="766.763474025974" y="560.0">org.omega.hrm.models.InternalApplicants</node>
+    <node x="222.0" y="715.0">org.omega.hrm.models.JobPositionDocument</node>
+    <node x="1642.7496151996156" y="640.0">org.omega.hrm.models.ContractEmploymentEndExtentionHistory</node>
+    <node x="1879.4720238095242" y="350.0">org.omega.hrm.models.Branch</node>
+    <node x="1097.8884740259741" y="0.0">org.omega.hrm.models.Address</node>
+    <node x="1449.25" y="350.0">org.omega.hrm.models.Benefit</node>
+    <node x="116.76347402597389" y="270.0">org.omega.hrm.models.Suspention</node>
+    <node x="1974.9720238095242" y="270.0">org.omega.hrm.models.EmployeeDisciplinaryReport</node>
+    <node x="1092.6384740259741" y="270.0">org.omega.hrm.models.EmployeeDisciplinaryReports</node>
+    <node x="1382.3505892255894" y="560.0">org.omega.hrm.models.BenefitPackageWithBenefitValue</node>
+    <node x="510.2496151996156" y="640.0">org.omega.hrm.models.EmploymentSequence</node>
+    <node x="0.0" y="0.0">org.omega.hrm.models.PhoneNumbers</node>
+    <node x="1092.8884740259741" y="90.0">org.omega.hrm.models.Employee</node>
+    <node x="2374.847023809524" y="640.0">org.omega.hrm.models.TimeSchedule</node>
+    <node x="0.0" y="715.0">org.omega.hrm.models.JobPositionQualification</node>
+    <node x="2075.1803571428577" y="560.0">org.omega.hrm.models.PDTRequests</node>
+    <node x="1415.4512385762387" y="270.0">org.omega.hrm.models.TerminationRequest</node>
+    <node x="2267.405946368447" y="350.0">org.omega.hrm.models.Schedule</node>
+    <node x="55.09680735930738" y="560.0">org.omega.hrm.models.Applicants</node>
+    <node x="1984.4720238095242" y="350.0">org.omega.hrm.models.CauseForDisciplinary</node>
+    <node x="2370.347023809524" y="560.0">org.omega.hrm.models.MonthlySchedule</node>
+    <node x="1208.3505892255894" y="560.0">org.omega.hrm.models.employmentHistory</node>
+    <node x="934.763474025974" y="270.0">org.omega.hrm.models.Commitment</node>
+    <node x="538.0134740259739" y="350.0">org.omega.hrm.models.Vacancy</node>
+    <node x="1632.077922077922" y="350.0">org.omega.hrm.models.BenefitPackage</node>
+    <node x="1618.577922077922" y="270.0">org.omega.hrm.models.BenefitPackageLevel</node>
+    <node x="1838.6386904761907" y="560.0">org.omega.hrm.models.ContractEmploymentInfo</node>
+    <node x="464.7634740259739" y="270.0">org.omega.hrm.models.PersonnelRequisition</node>
+    <node x="1623.3505892255894" y="560.0">org.omega.hrm.models.EmploymentInfo</node>
+    <node x="432.0" y="715.0">org.omega.hrm.models.LaborLaw</node>
+    <node x="2216.347023809524" y="560.0">org.omega.hrm.models.WeeklySchedule</node>
+    <node x="835.763474025974" y="270.0">org.omega.hrm.models.Leave</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.omega.hrm.models.EmployeeDisciplinaryReport" target="org.omega.hrm.models.Employee">
+      <point x="49.0" y="-15.0" />
+      <point x="2121.972023809524" y="180.0" />
+      <point x="1174.8884740259741" y="180.0" />
+      <point x="32.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.InternalApplicants" target="org.omega.hrm.models.Vacancy">
+      <point x="-18.0" y="-15.0" />
+      <point x="820.763474025974" y="530.0" />
+      <point x="620.813474025974" y="530.0" />
+      <point x="36.80000000000007" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.EmploymentInfo" target="org.omega.hrm.models.Employee">
+      <point x="-39.14285714285711" y="-15.0" />
+      <point x="1652.707732082732" y="400.0" />
+      <point x="1584.9642857142858" y="400.0" />
+      <point x="1584.9642857142858" y="200.0" />
+      <point x="1166.8884740259741" y="200.0" />
+      <point x="24.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.ContractEmploymentEndExtentionHistory" target="org.omega.hrm.models.BenefitPackage">
+      <point x="-67.25" y="-15.0" />
+      <point x="1709.9996151996156" y="610.0" />
+      <point x="1612.8505892255894" y="610.0" />
+      <point x="1612.8505892255894" y="480.0" />
+      <point x="1684.8506493506493" y="480.0" />
+      <point x="-11.727272727272748" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.Suspention" target="org.omega.hrm.models.Employee">
+      <point x="0.0" y="-15.0" />
+      <point x="170.2634740259739" y="140.0" />
+      <point x="1094.8884740259741" y="140.0" />
+      <point x="-48.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.employmentHistory" target="org.omega.hrm.models.Employee">
+      <point x="-57.75" y="-15.0" />
+      <point x="1227.6005892255894" y="540.0" />
+      <point x="1082.1384740259741" y="540.0" />
+      <point x="1082.1384740259741" y="250.0" />
+      <point x="1138.8884740259741" y="250.0" />
+      <point x="-4.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.Applicants" target="org.omega.hrm.models.Address">
+      <point x="-8.666666666666742" y="-15.0" />
+      <point x="98.43014069264063" y="540.0" />
+      <point x="95.26347402597389" y="540.0" />
+      <point x="95.26347402597389" y="60.0" />
+      <point x="1106.8884740259741" y="60.0" />
+      <point x="-36.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.BenefitPackageWithBenefitValue" target="org.omega.hrm.models.BenefitPackage">
+      <point x="82.5" y="-15.0" />
+      <point x="1574.8505892255894" y="470.0" />
+      <point x="1673.1233766233765" y="470.0" />
+      <point x="-23.454545454545496" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.EmploymentInfo" target="org.omega.hrm.models.Branch">
+      <point x="39.14285714285734" y="-15.0" />
+      <point x="1730.9934463684467" y="520.0" />
+      <point x="1900.7220238095242" y="520.0" />
+      <point x="-21.25" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.PerformanceEvaluation" target="org.omega.hrm.models.Employee">
+      <point x="-42.75" y="-15.0" />
+      <point x="686.513474025974" y="180.0" />
+      <point x="1110.8884740259741" y="180.0" />
+      <point x="-32.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.EmploymentSequence" target="org.omega.hrm.models.EmploymentInfo">
+      <point x="66.80000000000007" y="-15.0" />
+      <point x="660.5496151996157" y="620.0" />
+      <point x="1691.8505892255894" y="620.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.PDTRequests" target="org.omega.hrm.models.Branch">
+      <point x="-9.75" y="-15.0" />
+      <point x="2123.9303571428577" y="460.0" />
+      <point x="1943.2220238095242" y="460.0" />
+      <point x="21.25" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.EmploymentSequence" target="org.omega.hrm.models.PersonnelRequisition">
+      <point x="-66.79999999999984" y="-15.0" />
+      <point x="526.9496151996158" y="620.0" />
+      <point x="13.583333333333258" y="620.0" />
+      <point x="13.583333333333258" y="325.0" />
+      <point x="504.5134740259739" y="325.0" />
+      <point x="-39.75" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.Vacancy" target="org.omega.hrm.models.PersonnelRequisition">
+      <point x="1.1368683772161603E-13" y="-15.0" />
+      <point x="39.75" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.Address" target="org.omega.hrm.models.Employee">
+      <point x="18.0" y="15.0" />
+      <point x="1160.8884740259741" y="70.0" />
+      <point x="1176.2218073593071" y="70.0" />
+      <point x="33.33333333333326" y="-15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.Branch" target="org.omega.hrm.models.Address">
+      <point x="0.0" y="-15.0" />
+      <point x="1921.9720238095242" y="60.0" />
+      <point x="1178.8884740259741" y="60.0" />
+      <point x="36.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.ContractEmploymentEndExtentionHistory" target="org.omega.hrm.models.ContractEmploymentInfo">
+      <point x="67.25" y="-15.0" />
+      <point x="1844.4996151996156" y="620.0" />
+      <point x="1930.1386904761907" y="620.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.TimeSchedule" target="org.omega.hrm.models.MonthlySchedule">
+      <point x="-30.75" y="-15.0" />
+      <point x="-35.25" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.PDTRequests" target="org.omega.hrm.models.Employee">
+      <point x="48.75" y="-15.0" />
+      <point x="2182.4303571428577" y="520.0" />
+      <point x="2219.3809523809523" y="520.0" />
+      <point x="2219.3809523809523" y="140.0" />
+      <point x="1190.8884740259741" y="140.0" />
+      <point x="48.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.TerminationRequest" target="org.omega.hrm.models.Employee">
+      <point x="-38.75" y="-15.0" />
+      <point x="1454.2012385762387" y="220.0" />
+      <point x="1158.8884740259741" y="220.0" />
+      <point x="16.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.EmploymentSequence" target="org.omega.hrm.models.Vacancy">
+      <point x="1.1368683772161603E-13" y="-15.0" />
+      <point x="593.7496151996157" y="620.0" />
+      <point x="584.0134740259739" y="620.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.Commitment" target="org.omega.hrm.models.Employee">
+      <point x="0.0" y="-15.0" />
+      <point x="994.763474025974" y="230.0" />
+      <point x="1130.8884740259741" y="230.0" />
+      <point x="-12.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.ContractEmploymentInfo" target="org.omega.hrm.models.Employee">
+      <point x="45.75" y="-15.0" />
+      <point x="1975.8886904761907" y="490.0" />
+      <point x="2181.472023809524" y="490.0" />
+      <point x="2181.472023809524" y="170.0" />
+      <point x="1178.8884740259741" y="170.0" />
+      <point x="36.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.EmployeeDisciplinaryReports" target="org.omega.hrm.models.Employee">
+      <point x="-50.25" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.WeeklySchedule" target="org.omega.hrm.models.Schedule">
+      <point x="0.0" y="-15.0" />
+      <point x="2283.347023809524" y="540.0" />
+      <point x="2303.405946368447" y="540.0" />
+      <point x="-12.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.EmploymentSequence" target="org.omega.hrm.models.Applicants">
+      <point x="-33.399999999999864" y="-15.0" />
+      <point x="560.3496151996158" y="610.0" />
+      <point x="107.09680735930738" y="610.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.BenefitPackageWithBenefitValue" target="org.omega.hrm.models.Benefit">
+      <point x="-27.5" y="-15.0" />
+      <point x="1464.8505892255894" y="430.0" />
+      <point x="1513.0" y="430.0" />
+      <point x="21.25" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.Applicants" target="org.omega.hrm.models.Vacancy">
+      <point x="43.333333333333314" y="-15.0" />
+      <point x="150.43014069264063" y="540.0" />
+      <point x="565.6134740259739" y="540.0" />
+      <point x="-18.399999999999977" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.Leave" target="org.omega.hrm.models.Employee">
+      <point x="0.0" y="-15.0" />
+      <point x="874.763474025974" y="210.0" />
+      <point x="1122.8884740259741" y="210.0" />
+      <point x="-20.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.InternalApplicants" target="org.omega.hrm.models.Employee">
+      <point x="54.0" y="-15.0" />
+      <point x="892.763474025974" y="540.0" />
+      <point x="924.263474025974" y="540.0" />
+      <point x="924.263474025974" y="220.0" />
+      <point x="1126.8884740259741" y="220.0" />
+      <point x="-16.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.EmploymentInfo" target="org.omega.hrm.models.Schedule">
+      <point x="58.71428571428578" y="-15.0" />
+      <point x="1750.5648749398752" y="530.0" />
+      <point x="2279.405946368447" y="530.0" />
+      <point x="-36.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.CauseForDisciplinary" target="org.omega.hrm.models.EmployeeDisciplinaryReport">
+      <point x="-39.5" y="-15.0" />
+      <point x="-49.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.employmentHistory" target="org.omega.hrm.models.BenefitPackage">
+      <point x="19.25" y="-15.0" />
+      <point x="1304.6005892255894" y="440.0" />
+      <point x="1637.9415584415583" y="440.0" />
+      <point x="-58.63636363636374" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.Applicants" target="org.omega.hrm.models.PhoneNumbers">
+      <point x="-43.33333333333326" y="-15.0" />
+      <point x="63.76347402597412" y="540.0" />
+      <point x="48.10058922558915" y="540.0" />
+      <point x="48.10058922558915" y="70.0" />
+      <point x="21.833333333333258" y="70.0" />
+      <point x="-43.66666666666674" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.EmploymentSequence" target="org.omega.hrm.models.Employee">
+      <point x="33.40000000000009" y="-15.0" />
+      <point x="627.1496151996157" y="610.0" />
+      <point x="1065.2634740259741" y="610.0" />
+      <point x="1065.2634740259741" y="240.0" />
+      <point x="1134.8884740259741" y="240.0" />
+      <point x="-8.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.ContractEmploymentInfo" target="org.omega.hrm.models.BenefitPackage">
+      <point x="-76.25" y="-15.0" />
+      <point x="1853.8886904761907" y="500.0" />
+      <point x="1720.0324675324675" y="500.0" />
+      <point x="23.454545454545496" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.ContractEmploymentInfo" target="org.omega.hrm.models.Branch">
+      <point x="-15.25" y="-15.0" />
+      <point x="-7.083333333333485" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.Employee" target="org.omega.hrm.models.Address">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.PDTRequests" target="org.omega.hrm.models.BenefitPackage">
+      <point x="-29.25" y="-15.0" />
+      <point x="2104.4303571428577" y="470.0" />
+      <point x="1755.2142857142856" y="470.0" />
+      <point x="58.63636363636351" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.Employee" target="org.omega.hrm.models.PhoneNumbers">
+      <point x="-33.33333333333326" y="-15.0" />
+      <point x="1109.5551406926406" y="50.0" />
+      <point x="109.16666666666674" y="50.0" />
+      <point x="43.66666666666666" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.PersonnelRequisition" target="org.omega.hrm.models.Employee">
+      <point x="-39.749999999999886" y="-15.0" />
+      <point x="504.513474025974" y="160.0" />
+      <point x="1102.8884740259741" y="160.0" />
+      <point x="-40.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.MonthlySchedule" target="org.omega.hrm.models.Schedule">
+      <point x="-35.25" y="-15.0" />
+      <point x="2405.597023809524" y="540.0" />
+      <point x="2327.405946368447" y="540.0" />
+      <point x="12.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.EmploymentInfo" target="org.omega.hrm.models.BenefitPackage">
+      <point x="-19.57142857142867" y="-15.0" />
+      <point x="1672.2791606541605" y="490.0" />
+      <point x="1696.577922077922" y="490.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.EmployeeEmergancyContact" target="org.omega.hrm.models.Employee">
+      <point x="0.0" y="-15.0" />
+      <point x="344.2634740259739" y="150.0" />
+      <point x="1098.8884740259741" y="150.0" />
+      <point x="-44.0" y="15.0" />
+    </edge>
+    <edge source="org.omega.hrm.models.BenefitPackage" target="org.omega.hrm.models.BenefitPackageLevel">
+      <point x="-32.25" y="-15.0" />
+      <point x="1664.327922077922" y="325.0" />
+      <point x="1657.577922077922" y="325.0" />
+      <point x="-39.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="1140.761904761903" y="298.7460317460316" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,6 +1,5 @@
 package org.omega.hrm.models;
 
-import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -29,7 +28,7 @@ public class Vacancy {
     private Date updateDate;
     private String appProcessDiscription;
     private Integer requestedQuantity;
-    private DateTimeFormat deadLine;
+    private Date deadLine;
     private Integer reanounce = 0 ;
     private String remark;
 
