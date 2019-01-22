@@ -1,15 +1,6 @@
 package org.omega.omegaerp.services;
 
-import org.omega.omegaerp.dal.NotificationRepository;
-import org.omega.omegaerp.dal.UserNotificationRepository;
-import org.omega.omegaerp.models.Notification;
-import org.omega.omegaerp.models.User;
-import org.omega.omegaerp.models.UserNotification;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Heka on 12/26/2018.

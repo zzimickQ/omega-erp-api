@@ -1,7 +1,5 @@
 package org.omega.omegaerp.models;
 
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
 import java.util.List;
 import javax.persistence.*;
 import java.util.Date;

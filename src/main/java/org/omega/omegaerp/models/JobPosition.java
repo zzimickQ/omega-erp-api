@@ -1,6 +1,7 @@
 package org.omega.omegaerp.models;
 
-import javax.persistence.Entity;
+import com.fasterxml.jackson.annotation.JsonView;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -13,6 +14,7 @@ public class JobPosition {
 
     @OneToMany
     @JoinColumn(name = "job_position")
+    @JsonView(JobPosition.class)
     private List<User> users;
 
     private String title;
@@ -20,25 +22,31 @@ public class JobPosition {
 
     @ManyToOne
     @JoinColumn(name = "category")
+    @JsonView(JobPosition.class)
     private JobCategory category;
 
     private Integer level = 0;
 
     @OneToMany
     @JoinColumn(name = "supervisor")
+    @JsonView(JobPosition.class)
     private List<JobPosition> supervises;
 
     @ManyToOne
     @JoinColumn(name = "supervisor")
+    @JsonView(JobPosition.class)
     private JobPosition supervisor;
 
     @ManyToMany
     @JoinColumn(name = "job_position", table = "default_job_position_privileges")
+    @JsonView(JobPosition.class)
     private List<Privilege> defaultPrivileges;
 
     public JobPosition(Integer jobPositionId) {
         this.id = jobPositionId;
     }
+
+    public JobPosition() {}
 
     public Integer getId() {
         return id;

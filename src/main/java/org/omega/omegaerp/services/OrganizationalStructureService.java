@@ -3,6 +3,7 @@ package org.omega.omegaerp.services;
 import org.omega.omegaerp.dal.JobPositionRepository;
 import org.omega.omegaerp.models.JobPosition;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
@@ -10,6 +11,7 @@ import java.util.Optional;
 /**
  * Created by Kass on 12/27/2018.
  */
+@Service
 public class OrganizationalStructureService {
 
     @Autowired

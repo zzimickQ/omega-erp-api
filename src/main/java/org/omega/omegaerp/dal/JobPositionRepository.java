@@ -1,7 +1,6 @@
 package org.omega.omegaerp.dal;
 
 import org.omega.omegaerp.models.JobPosition;
-import org.omega.omegaerp.models.Privilege;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

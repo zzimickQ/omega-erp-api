@@ -1,8 +1,5 @@
 package org.omega.omegaerp.services;
 
-import org.omega.omegaerp.exception.PrivilegeViolationException;
-import org.omega.omegaerp.models.Privilege;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**

@@ -1,11 +1,6 @@
 package org.omega.omegaerp.controllers;
 
-import org.omega.omegaerp.models.Notification;
-import org.omega.omegaerp.services.NotificationService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 /**
  * Created by Heka on 12/26/2018.

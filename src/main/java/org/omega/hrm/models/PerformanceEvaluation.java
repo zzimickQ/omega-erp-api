@@ -5,7 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import java.util.Date;
-import java.util.List;
 
 /**
  * Created by Kass on 12/27/2018.

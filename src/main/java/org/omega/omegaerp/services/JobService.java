@@ -4,7 +4,6 @@ import org.omega.omegaerp.dal.JobCategoryRepository;
 import org.omega.omegaerp.dal.JobPositionRepository;
 import org.omega.omegaerp.dal.PrivilegeRepository;
 import org.omega.omegaerp.models.*;
-import org.omega.omegaerp.models.JobPosition;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

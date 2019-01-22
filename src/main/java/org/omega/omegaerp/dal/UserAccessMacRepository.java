@@ -4,7 +4,6 @@ import org.omega.omegaerp.models.UserAccessMac;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
-import java.util.Optional;
 
 /**
  * Created by Zzimick on 1/15/2019.
