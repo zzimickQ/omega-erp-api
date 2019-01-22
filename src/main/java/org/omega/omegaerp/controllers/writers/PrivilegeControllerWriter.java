@@ -1,6 +1,5 @@
 package org.omega.omegaerp.controllers.writers;
 
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**

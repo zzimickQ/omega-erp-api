@@ -9,6 +9,7 @@ import java.util.List;
 /**
  * Created by Kass on 12/31/2018.
  */
+@Entity
 public class EmploymentInfo {
 
     @Id
@@ -26,7 +27,7 @@ public class EmploymentInfo {
     private int empType;
     @OneToOne
     private Branch branchId;
-    @OneToMany
+    @OneToOne
     private BenefitPackage benefitPackageId;
 
     @OneToMany

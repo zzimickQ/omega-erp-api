@@ -1,5 +1,7 @@
 package org.omega.omegaerp.models;
 
+import com.fasterxml.jackson.annotation.JsonView;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -16,12 +18,15 @@ public class JobCategory {
 
     @OneToMany
     @JoinColumn(name = "category")
+    @JsonView(JobCategory.class)
     private List<JobPosition> jobPositions;
 
     public JobCategory(Integer id) {
         this.id = id;
     }
 
+    public JobCategory() {
+    }
 
     public Integer getId() {
         return id;

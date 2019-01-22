@@ -13,4 +13,5 @@ import java.util.List;
 public interface JobPositionRepository extends CrudRepository<JobPosition,Integer> {
     List<JobPosition> findBySupervisor(JobPosition jp);
     List<JobPosition> findByCategoryId(Integer categoryId);
+
 }

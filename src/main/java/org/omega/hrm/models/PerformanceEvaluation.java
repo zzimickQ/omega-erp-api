@@ -1,9 +1,10 @@
 package org.omega.hrm.models;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import java.util.Date;
-import java.util.List;
 
 /**
  * Created by Kass on 12/27/2018.
@@ -12,13 +13,15 @@ import java.util.List;
 public class PerformanceEvaluation {
 
 
+    @Id
+    @GeneratedValue
     private Integer id;
 
     @ManyToOne
-    private List<Employee> evaluatingEmployee;
+    private Employee evaluatingEmployee;
 
     @ManyToOne
-    private List<Employee> employee;
+    private Employee employee;
     private float grade;
     private String remark;
     private Date evaluationDate;
@@ -34,19 +37,19 @@ public class PerformanceEvaluation {
         this.id = id;
     }
 
-    public List<Employee> getEvaluatingEmployee() {
+    public Employee getEvaluatingEmployee() {
         return evaluatingEmployee;
     }
 
-    public void setEvaluatingEmployee(List<Employee> evaluatingEmployee) {
+    public void setEvaluatingEmployee(Employee evaluatingEmployee) {
         this.evaluatingEmployee = evaluatingEmployee;
     }
 
-    public List<Employee> getEmployee() {
+    public Employee getEmployee() {
         return employee;
     }
 
-    public void setEmployee(List<Employee> employee) {
+    public void setEmployee(Employee employee) {
         this.employee = employee;
     }
 

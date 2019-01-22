@@ -12,7 +12,8 @@ public class BenefitPackage {
     private Integer id ;
 
     private String name;
-    @OneToMany
+
+    @ManyToOne
     private BenefitPackageLevel benefitPackageLevel;
 
     public Integer getId() {

@@ -1,6 +1,8 @@
 package org.omega.hrm.models;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import java.util.Date;
 import java.util.List;
@@ -10,7 +12,9 @@ import java.util.List;
  */
 @Entity
 public class TerminationRequest {
-    Integer id;
+    @Id
+    @GeneratedValue
+    private Integer id;
 
     @OneToMany
     private List<Employee> employee;

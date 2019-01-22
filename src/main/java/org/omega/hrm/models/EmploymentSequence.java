@@ -33,5 +33,59 @@ public class EmploymentSequence {
     private EmploymentInfo employmentInfo;
 
 
+    public Integer getId() {
+        return id;
+    }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public PersonnelRequisition getPersonnelRequisition() {
+        return personnelRequisition;
+    }
+
+    public void setPersonnelRequisition(PersonnelRequisition personnelRequisition) {
+        this.personnelRequisition = personnelRequisition;
+    }
+
+    public Vacancy getVacancy() {
+        return vacancy;
+    }
+
+    public void setVacancy(Vacancy vacancy) {
+        this.vacancy = vacancy;
+    }
+
+    public Boolean getApplicantSource() {
+        return applicantSource;
+    }
+
+    public void setApplicantSource(Boolean applicantSource) {
+        this.applicantSource = applicantSource;
+    }
+
+    public Applicants getApplicants() {
+        return applicants;
+    }
+
+    public void setApplicants(Applicants applicants) {
+        this.applicants = applicants;
+    }
+
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
+
+    public EmploymentInfo getEmploymentInfo() {
+        return employmentInfo;
+    }
+
+    public void setEmploymentInfo(EmploymentInfo employmentInfo) {
+        this.employmentInfo = employmentInfo;
+    }
 }

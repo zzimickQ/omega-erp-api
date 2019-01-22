@@ -1,7 +1,6 @@
 package org.omega.omegaerp.models;
 
 import javax.persistence.*;
-import java.util.List;
 
 /**
  * Created by Kass on 12/26/2018.

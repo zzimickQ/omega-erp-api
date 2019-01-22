@@ -16,6 +16,7 @@ public class Applicants {
     private String last_name;
     private String g_father_name;
     private String sex;
+
     private Date birth_date;
     private String email;
     private float interview_result;
