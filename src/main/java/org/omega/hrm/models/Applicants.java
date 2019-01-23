@@ -11,29 +11,22 @@ public class Applicants {
     @Id
     @GeneratedValue
     private Integer id;
-
-    @ManyToOne
-    private Vacancy vacancy;
-
     private Date apply_date ;
-
     private String first_name;
-
     private String last_name;
-
     private String g_father_name;
-
     private String sex;
 
     private Date birth_date;
-
     private String email;
-
     private float interview_result;
     private String interview_remark;
     private float test_result;
     private int passed;
     private boolean black_listed;
+
+    @ManyToOne
+    private Vacancy vacancy;
 
     @OneToOne
     private PhoneNumbers primaryPhoneNumber;
