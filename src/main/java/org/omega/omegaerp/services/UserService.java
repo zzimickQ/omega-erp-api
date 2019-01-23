@@ -57,7 +57,7 @@ public class UserService {
             user.setEmail(newUserDetail.getEmail());
             user.setFirstName(newUserDetail.getFirstName());
             // ...
-            userRepository.save(user);
+            return userRepository.save(user);
         }
         return null;
     }
@@ -97,7 +97,6 @@ public class UserService {
             Privilege privilege = privilegeOptional.get();
 
             if (user.getPrivileges().contains(privilege)) {
-                // check user doesn't already have privilege
                 return false;
             }
 

@@ -3,6 +3,7 @@ package org.omega.omegaerp.services;
 import org.omega.omegaerp.dal.PrivilegeRepository;
 import org.omega.omegaerp.dal.UserAccessMacRepository;
 import org.omega.omegaerp.dal.UserRepository;
+import org.omega.omegaerp.exception.UserNotLoggedException;
 import org.omega.omegaerp.models.Privilege;
 import org.omega.omegaerp.models.UserAccessMac;
 import org.omega.omegaerp.session.UserSession;
@@ -35,7 +36,6 @@ public class UserSessionService {
 
     @Autowired
     private PrivilegeRepository privilegeRepository;
-
 
     public UserSession getLoggedUser() {
         return (UserSession) httpSession.getAttribute(USER_LOGIN_SESSION_NAME);
@@ -91,4 +91,8 @@ public class UserSessionService {
         return false;
     }
 
+    public void mustLogIn() throws UserNotLoggedException {
+        if(isLoggedIn()) return;
+        throw new UserNotLoggedException();
+    }
 }

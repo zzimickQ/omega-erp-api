@@ -2,6 +2,7 @@ package org.omega.omegaerp.models;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Created by Quatra on 12/26/2018.
@@ -47,4 +48,18 @@ public class Privilege {
         this.description = description;
     }
 
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Privilege)) return false;
+        Privilege privilege = (Privilege) o;
+        return Objects.equals(id, privilege.id) &&
+                Objects.equals(name, privilege.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name);
+    }
 }
