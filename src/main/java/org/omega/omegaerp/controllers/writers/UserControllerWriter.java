@@ -40,7 +40,6 @@ public class UserControllerWriter {
 //        }
 
         User updatedUser = userService.updateUser(id, user);
-
         return ResponseEntity.ok(updatedUser);
     }
 

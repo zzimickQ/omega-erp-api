@@ -2,8 +2,7 @@ package org.omega.omegaerp.controllers.exhandlers;
 
 
 import org.omega.omegaerp.exception.UserNotLoggedException;
-import org.omega.omegaerp.reponses.CommandResponse;
-import org.omega.omegaerp.reponses.ErrorResponse;
+import org.omega.omegaerp.coms.reponses.CommandResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 

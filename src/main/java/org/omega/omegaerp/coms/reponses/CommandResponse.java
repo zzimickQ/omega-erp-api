@@ -1,4 +1,4 @@
-package org.omega.omegaerp.reponses;
+package org.omega.omegaerp.coms.reponses;
 
 public class CommandResponse {
     private String command;
