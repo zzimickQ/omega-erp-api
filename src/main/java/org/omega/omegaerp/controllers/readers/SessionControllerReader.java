@@ -16,24 +16,19 @@ public class SessionControllerReader {
     @Autowired
     private UserSessionService userSessionService;
 
-    @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public ResponseEntity<?> tryLogin(@RequestBody UserAuthRequest userAuthRequest) {
-        boolean logged = userSessionService.login(
-                userAuthRequest.getUsername(),
-                userAuthRequest.getPassword(),
-                userAuthRequest.getMacAddress()
-        );
-        if (logged) {
-            return ResponseEntity.ok(new CommandResponse("typeuser"));
-        } else {
-            return ResponseEntity.notFound().build();
-        }
-    }
-
     @RequestMapping(value = "/privilege", method = RequestMethod.GET)
     public ResponseEntity<?> getLoggedInUserPrivileges() {
 //        userSessionService.mustLogIn();
         return ResponseEntity.ok(userSessionService.getLoggedUser().getPrivileges());
+    }
+
+    @RequestMapping(value = "/loggedIn", method = RequestMethod.GET)
+    public ResponseEntity<?> isLoggedIn() {
+        if(userSessionService.isLoggedIn()) {
+            return ResponseEntity.ok().build();
+        } else {
+            return ResponseEntity.noContent().build();
+        }
     }
 
 }
