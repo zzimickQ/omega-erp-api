@@ -13,6 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/jobs")
+
 public class JobControllerReader {
 
     @Autowired
@@ -24,23 +25,39 @@ public class JobControllerReader {
     @RequestMapping(value = "/category", method = RequestMethod.GET)
     public ResponseEntity<?> getAllCategories() {
 
+        userSessionService.checkUserHasPrivilage(Privileges.GET_CATEGORIES);
+
         return ResponseEntity.ok(jobService.getAllCategories());
     }
 
     @RequestMapping(value = "/jobpos/", method = RequestMethod.GET)
     public ResponseEntity<?> getAllJobPositions() {
+        userSessionService.checkUserHasPrivilage(Privileges.GET_JOB_POISITIONS);
         return ResponseEntity.ok(jobService.getAllJobPosition());
     }
 
     @RequestMapping(value = "/jobpos/{id}", method = RequestMethod.GET)
     public ResponseEntity<?> getJobPositionById(@PathVariable Integer id) {
+        userSessionService.checkUserHasPrivilage(Privileges.GET_JOB_POISITIONS);
+        userSessionService.checkUserHasPrivilage(Privileges.GET_ONE_JOB_POISITIONS);
 
         return ResponseEntity.ok(jobService.getJobPositionById(id));
     }
 
     @RequestMapping(value = "/jobpos/cat/{id}", method = RequestMethod.GET)
     public ResponseEntity<?> getJobPositionByCategoryId(@PathVariable Integer id) {
+        userSessionService.checkUserHasPrivilage(Privileges.GET_CATEGORIES);
+        userSessionService.checkUserHasPrivilage(Privileges.GET_JOB_POISITIONS);
+
+
         return ResponseEntity.ok(jobService.getAllJobPositionInCategory(id));
+    }
+
+    @RequestMapping(value = "/jobpos/s/{search}")
+    public ResponseEntity<?> searchJobPosition(@PathVariable String search) {
+        userSessionService.checkUserHasPrivilage(Privileges.GET_JOB_POISITIONS);
+        return null;
+
     }
 
 

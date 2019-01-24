@@ -101,5 +101,10 @@ public class OrganizationalStructureService {
         return null;
     }
 
+    public void getHeadOfOrg(){
+
+
+    }
+
 
 }
