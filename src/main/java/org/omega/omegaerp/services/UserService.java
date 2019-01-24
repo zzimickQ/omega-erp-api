@@ -56,6 +56,7 @@ public class UserService {
             // TODO: copy only things that are to be edited from newUserDetail to user
             user.setEmail(newUserDetail.getEmail());
             user.setFirstName(newUserDetail.getFirstName());
+            user.setLastName(newUserDetail.getLastName());
             // ...
             return userRepository.save(user);
         }
