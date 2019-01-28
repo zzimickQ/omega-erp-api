@@ -1,5 +1,6 @@
 package org.omega.hrm.services;
 
+import org.omega.hrm.models.Applicant;
 import org.omega.hrm.models.Applicants;
 import org.omega.hrm.models.Vacancy;
 import org.springframework.stereotype.Service;
@@ -12,16 +13,16 @@ import java.util.List;
 @Service
 public abstract class ApplicantsService {
 
-    public abstract Applicants registerApplication(Vacancy vacancy, Applicants applicant);
+    public abstract Applicant registerApplication(Vacancy vacancy, Applicant applicant);
 
-    public abstract List<Applicants> getApplicantsForVacancy(Vacancy vacancy);
+    public abstract List<Applicant> getApplicantsForVacancy(Vacancy vacancy);
 
-    public abstract List<Applicants> getApplicants();
+    public abstract List<Applicant> getApplicants();
 
-    public abstract Applicants getApplicant(Integer applicantId);
+    public abstract Applicant getApplicant(Integer applicantId);
 
     public abstract void deleteApplicants(Integer id);
 
-    public abstract Applicants editApplicants(Integer id,Applicants applicants);
+    public abstract Applicant editApplicants(Integer id, Applicant applicants);
 
 }
