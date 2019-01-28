@@ -7,7 +7,7 @@ import java.util.Date;
  * Created by Kass on 12/27/2018.
  */
 @Entity
-public class Applicants {
+public class Applicant {
     @Id
     @GeneratedValue
     private Integer id;

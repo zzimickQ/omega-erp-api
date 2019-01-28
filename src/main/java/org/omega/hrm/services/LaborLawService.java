@@ -8,12 +8,12 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public abstract class LaborLawService {
-    public abstract LaborLaw geLaborLawValues();
+    public abstract LaborLaw getLaborLawValues();
 
     public abstract LaborLaw createLaborLaw
             (LaborLaw laborLaw);
 
-    public abstract void deleteInternalApplicants(Integer id);
+    public abstract void deleteLaborLawValues(Integer id);
 
     public abstract LaborLaw editLaborLaw
             (Integer id, LaborLaw laborLaw);
