@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public abstract class BenefitPackageLevelService {
     public abstract BenefitPackageLevel createBenefitPackageLevel
-            (BenefitPackageLevel applicants);
+            (BenefitPackageLevel benefitPackageLevel);
 
     public abstract BenefitPackageLevel getBenefitPackageLevel();
 
