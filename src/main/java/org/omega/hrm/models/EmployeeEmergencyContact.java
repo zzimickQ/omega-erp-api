@@ -10,7 +10,7 @@ import javax.persistence.ManyToOne;
  * Created by Heka on 12/27/2018.
  */
 @Entity
-public class EmployeeEmergancyContact {
+public class EmployeeEmergencyContact {
 
     @Id
     @GeneratedValue

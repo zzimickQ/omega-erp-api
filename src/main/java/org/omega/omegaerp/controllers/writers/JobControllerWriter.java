@@ -3,7 +3,6 @@ package org.omega.omegaerp.controllers.writers;
 import org.omega.omegaerp.constants.Privileges;
 import org.omega.omegaerp.models.JobCategory;
 import org.omega.omegaerp.models.JobPosition;
-import org.omega.omegaerp.models.Privilege;
 import org.omega.omegaerp.services.JobService;
 import org.omega.omegaerp.services.UserSessionService;
 import org.springframework.beans.factory.annotation.Autowired;

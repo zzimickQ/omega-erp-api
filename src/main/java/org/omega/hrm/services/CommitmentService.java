@@ -21,7 +21,7 @@ public abstract class CommitmentService {
 
     public abstract List<Commitment> getAllCommitment();
 
-    public abstract List<Commitment> getCommitmentsForEmployee(String empId);
+    public abstract List<Commitment> getCommitmentsForEmployee(Integer empId);
 
 
 

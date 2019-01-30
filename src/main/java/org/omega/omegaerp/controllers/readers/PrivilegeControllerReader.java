@@ -4,7 +4,6 @@ import org.omega.omegaerp.constants.Privileges;
 import org.omega.omegaerp.models.Privilege;
 import org.omega.omegaerp.services.PrivilegeService;
 import org.omega.omegaerp.services.UserSessionService;
-import org.omega.omegaerp.session.UserSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

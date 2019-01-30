@@ -17,7 +17,7 @@ public abstract class AddressService {
 
     public abstract void deleteAddress(Integer id);
 
-    public abstract List<Address> getAddressforEmployee(String empId);
+    public abstract List<Address> getAddressforEmployee(Integer empId);
     public abstract List<Address> getAddressforBranch(Integer branchId);
 
 

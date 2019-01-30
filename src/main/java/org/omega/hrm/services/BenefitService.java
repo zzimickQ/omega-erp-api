@@ -11,9 +11,9 @@ import org.springframework.stereotype.Service;
 @Service
 public abstract class BenefitService {
     public abstract Benefit createBenefit(Benefit benefit);
-    public abstract Benefit createBenefitForEmployee(Integer benefitId, String empId);
+    public abstract Benefit createBenefitForEmployee(Integer benefitId, Integer empId);
 
-    public abstract Benefit getBenefitForEmployee(String empId);
+    public abstract Benefit getBenefitForEmployee(Integer empId);
 
     public abstract Benefit getBenefit();
 
