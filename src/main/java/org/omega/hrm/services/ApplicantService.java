@@ -12,11 +12,12 @@ import java.util.List;
 @Service
 public abstract class ApplicantService {
 
-    public abstract Applicant registerApplicant(Vacancy vacancy, Applicant applicant);
+    public abstract Applicant registerApplicant(Integer vacId, Applicant applicant);
 
     public abstract List<Applicant> getApplicantsForVacancy(Vacancy vacancy);
 
-    public abstract List<Applicant> getApplicant();
+    public abstract Applicant getApplicant(Integer id);
+    public abstract List<Applicant> getApplicants();
 
     public abstract void deleteApplicant (Integer id);
 

@@ -1,7 +1,6 @@
 package org.omega.hrm.services;
 
 import org.omega.hrm.models.JobPositionQualification;
-import org.omega.omegaerp.models.JobPosition;
 import org.springframework.stereotype.Service;
 
 

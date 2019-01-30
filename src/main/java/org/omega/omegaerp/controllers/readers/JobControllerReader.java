@@ -1,15 +1,11 @@
 package org.omega.omegaerp.controllers.readers;
 
 import org.omega.omegaerp.constants.Privileges;
-import org.omega.omegaerp.models.JobCategory;
-import org.omega.omegaerp.models.JobPosition;
 import org.omega.omegaerp.services.JobService;
 import org.omega.omegaerp.services.UserSessionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/jobs")

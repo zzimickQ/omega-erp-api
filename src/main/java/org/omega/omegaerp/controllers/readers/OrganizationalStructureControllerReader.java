@@ -3,7 +3,6 @@ package org.omega.omegaerp.controllers.readers;
 import org.omega.omegaerp.constants.Privileges;
 import org.omega.omegaerp.services.OrganizationalStructureService;
 import org.omega.omegaerp.services.UserSessionService;
-import org.omega.omegaerp.session.UserSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
