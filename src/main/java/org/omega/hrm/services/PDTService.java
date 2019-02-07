@@ -9,9 +9,9 @@ import java.util.List;
 public abstract class PDTService {
 
     public abstract List<PDTRequests> getPDTRequests();
-    public abstract PDTRequests getPDTRequestForEmp(String empId);
-    public abstract PDTRequests editPDT(Integer id);
+    public abstract PDTRequests getPDTRequestForEmp(Integer empId);
+    public abstract PDTRequests editPDT(Integer id, PDTRequests pdtRequest );
     public abstract void deletePDT(Integer id);
-    public abstract PDTRequests setPDT(PDTRequests pdtRequest);
+    public abstract PDTRequests setPDT(Integer empId, PDTRequests pdtRequest);
 
 }
