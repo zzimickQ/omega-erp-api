@@ -18,10 +18,11 @@ public class EmployeeEmergencyContact {
 
     @ManyToOne
     private Employee employee;
-    private String firstname;
-    private String fathername;
-    private String grandfathername;
-    private String relationtoemp;
+
+    private String firstName;
+    private String fatherName;
+    private String grandFatherName;
+    private String relationToEmployee;
     private String nationality="Ethiopia";
 
 

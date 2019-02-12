@@ -19,21 +19,19 @@ public class PersonnelRequisition {
     private Date requestDate;
     private Date requestSubmitionDate;
     private Integer requestingDepartment;
+    private Integer quantity;
+    private String reasonForRequest;
+    private String employment_type;
+    private String reccruit_from;
+    private Integer request_status;
 
     @ManyToOne
     private Employee initiatedBy;
-
     @ManyToOne
     private Employee requested_by_employee;
-
-    private Integer quantity;
-    private String reason_for_request;
-    private String employment_type;
-
     @ManyToOne
     private JobPosition job_position;
-    private String reccruit_from;
-    private Integer request_status;
+
 
     public Integer getId() {
         return id;

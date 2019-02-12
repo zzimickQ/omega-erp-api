@@ -17,25 +17,26 @@ public class PDTRequests {
     private int type;
     private Date requestDate;
     private Integer requestingDepartment;
+    private String reason;
+    private  Float toSalary;
+    private Boolean state;
+    private Date finalizedDate;
+    private String remark;
+
     @ManyToOne
     private Employee requestedEmployee;
     @ManyToOne
     private Employee initiatedByEmployee;
-    private String reason;
     @ManyToOne
     private Employee employee;
     @OneToOne
     private Branch toBranch;
-
     @OneToOne
     private JobPosition toJobPosition;
     @OneToMany
     private List<BenefitPackage> toBenefitPackage;
 
-    private  Float toSalary;
-    private Boolean state;
-    private Date finalizedDate;
-    private String remark;
+
 
     public Integer getId() {
         return id;

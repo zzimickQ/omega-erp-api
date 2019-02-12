@@ -13,7 +13,6 @@ public class JobPositionQualification {
     @Id
     @GeneratedValue
     private Integer id;
-
     private Integer ageFrom;
     private Integer ageTo = 99;
     private String gender="none";

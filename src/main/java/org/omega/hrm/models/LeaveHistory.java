@@ -15,18 +15,15 @@ public class LeaveHistory {
     @Id
     @GeneratedValue
     private Integer id;
-
-    @ManyToOne
-    private Employee employee;
-
-    private Integer leavetype;
-
+    private Integer leaveType;
+    private Boolean state;
+    private Date startDate;
+    private Date endDate;
+    private String remark;
     @ManyToOne
     private Employee requstedByEmployee;
-    private Boolean state;
-    private Date startdate;
-    private Date enddate;
-    private String remark;
+    @ManyToOne
+    private Employee employee;
 
 }
 

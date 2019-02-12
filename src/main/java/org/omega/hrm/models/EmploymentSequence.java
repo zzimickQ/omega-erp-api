@@ -14,23 +14,20 @@ public class EmploymentSequence {
     @Id
     @GeneratedValue
     private Integer id;
+    private Boolean applicantSource;
 
     @ManyToOne
     private PersonnelRequisition personnelRequisition;
-
     @ManyToOne
     private Vacancy vacancy;
-
-    private Boolean applicantSource;
-
     @ManyToOne
     private Applicant applicant;
 
     @ManyToOne
     private Employee employee;
-
     @ManyToOne
     private EmploymentInfo employmentInfo;
+
 
 
     public Integer getId() {

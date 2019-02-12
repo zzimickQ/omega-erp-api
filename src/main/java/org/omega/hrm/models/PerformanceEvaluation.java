@@ -16,15 +16,15 @@ public class PerformanceEvaluation {
     @Id
     @GeneratedValue
     private Integer id;
-
-    @ManyToOne
-    private Employee evaluatingEmployee;
-
-    @ManyToOne
-    private Employee employee;
     private float grade;
     private String remark;
     private Date evaluationDate;
+
+    @ManyToOne
+    private Employee evaluatingEmployee;
+    @ManyToOne
+    private Employee employee;
+
 
 //    whether the report was done as periodically or on demand
     private boolean method;

@@ -15,13 +15,12 @@ public class JobPositionDocument {
     @Id
     @GeneratedValue
     private Integer id;
-
-    @OneToOne
-    private JobPosition jobPosition;
     private String docType;
     private boolean mandatory;
     private Integer deadlineDays;
     private Integer remindInDays;
+    @OneToOne
+    private JobPosition jobPosition;
 
     public Integer getId() {
         return id;

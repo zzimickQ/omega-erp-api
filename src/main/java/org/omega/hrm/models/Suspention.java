@@ -17,19 +17,17 @@ public class Suspention {
     @GeneratedValue
     private Integer id;
 
-    @ManyToOne
-    private Employee employee;
-
-    @ManyToOne
-    private Employee requestedByEmployee;
-
     private Boolean salaryallowance;
     private Integer causeforsuspention;
     private Boolean warnedofsuspension;
     private Date startdate;
     private Date enddate;
     private String remark;
+    @ManyToOne
+    private Employee employee;
 
+    @ManyToOne
+    private Employee requestedByEmployee;
 
 
 }
