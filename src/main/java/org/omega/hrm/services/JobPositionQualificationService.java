@@ -15,8 +15,8 @@ public abstract class JobPositionQualificationService {
     public abstract void deleteJobPositionQualification
             (Integer id);
     public abstract JobPositionQualification getJOJobPositionQualificationForEmployee
-            (String empId);
-    public abstract JobPositionQualification getJobPositionQualificationForJobPositionQua
+            (Integer empId);
+    public abstract JobPositionQualification getJobPositionQualificationForJobPosition
             (Integer jobPositionId);
 
 }

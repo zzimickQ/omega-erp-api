@@ -24,7 +24,7 @@ public abstract class VacancyService {
 
     public abstract List<Vacancy> getAllVacancy();
 
-    public abstract Vacancy rePostVacancy(Integer id, Vacancy vacancy);
+    public abstract Vacancy rePostVacancy(Integer vacId, Vacancy vacancy);
 
 
 }

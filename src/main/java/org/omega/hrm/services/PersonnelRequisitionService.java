@@ -16,7 +16,7 @@ public abstract class PersonnelRequisitionService {
     public abstract PersonnelRequisition createPersonnelRequisition
             (PersonnelRequisition internalApplicants);
 
-    public abstract void deleteInternalApplicants(Integer id);
+    public abstract void deletePersonnelRequisition(Integer id);
 
     public abstract PersonnelRequisition editPersonnelRequisition
             (Integer id, PersonnelRequisition personnelRequisition);
