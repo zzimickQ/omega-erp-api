@@ -3,6 +3,8 @@ package org.omega.hrm.services;
 import org.omega.hrm.models.TerminationRequest;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * Created by Kass on 12/31/2018.
  */
@@ -10,12 +12,15 @@ import org.springframework.stereotype.Service;
 public abstract  class TerminationService {
 
     public abstract TerminationRequest createTermination
-            (TerminationRequest termination);
+            (TerminationRequest termination, Integer empId);
 
     public abstract void deleteTermination(Integer id);
 
     public abstract TerminationRequest editTermination
             (Integer id, TerminationRequest terminationRequest);
 
-    public abstract TerminationRequest getTermination();
+    public abstract List<TerminationRequest> getTermination();
+    public abstract List<TerminationRequest> getTerminationForEmployee(Integer empId);
+
+
 }

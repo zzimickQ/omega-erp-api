@@ -3,7 +3,6 @@ package org.omega.hrm.models;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 
 /**
  * Created by Heka on 12/31/2018.

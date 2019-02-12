@@ -19,8 +19,8 @@ public class Vacancy {
 
 
     private String recruitFrom;
-    //this recruit form is a desicion made by human resource to hire from
-        //intenal, external or both aplicants
+    //this recruit form is a description made by human resource to hire from
+        //internal, external or both applicants
 
     private Date postDate;
     private Date updateDate;

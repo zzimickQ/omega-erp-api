@@ -56,8 +56,9 @@ public class UserService {
             // TODO: copy only things that are to be edited from newUserDetail to user
             user.setEmail(newUserDetail.getEmail());
             user.setFirstName(newUserDetail.getFirstName());
+            user.setLastName(newUserDetail.getLastName());
             // ...
-            userRepository.save(user);
+            return userRepository.save(user);
         }
         return null;
     }
@@ -97,7 +98,6 @@ public class UserService {
             Privilege privilege = privilegeOptional.get();
 
             if (user.getPrivileges().contains(privilege)) {
-                // check user doesn't already have privilege
                 return false;
             }
 

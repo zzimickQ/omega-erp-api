@@ -21,7 +21,8 @@ public class EmploymentSequence {
     @ManyToOne
     private Vacancy vacancy;
     @ManyToOne
-    private Applicants applicants;
+    private Applicant applicant;
+
     @ManyToOne
     private Employee employee;
     @ManyToOne
@@ -61,12 +62,12 @@ public class EmploymentSequence {
         this.applicantSource = applicantSource;
     }
 
-    public Applicants getApplicants() {
-        return applicants;
+    public Applicant getApplicant() {
+        return applicant;
     }
 
-    public void setApplicants(Applicants applicants) {
-        this.applicants = applicants;
+    public void setApplicant(Applicant applicant) {
+        this.applicant = applicant;
     }
 
     public Employee getEmployee() {

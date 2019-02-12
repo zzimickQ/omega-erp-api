@@ -89,7 +89,6 @@ public class PersonnelRequisition {
         this.employment_type = employment_type;
     }
 
-
     public String getReccruit_from() {
         return reccruit_from;
     }
