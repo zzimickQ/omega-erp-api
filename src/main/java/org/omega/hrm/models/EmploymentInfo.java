@@ -16,22 +16,21 @@ public class EmploymentInfo {
     @GeneratedValue
     private Integer id;
 
-    @OneToOne
-    private Employee employeeId;
-
-    @OneToOne
-    private JobPosition jobPositionId;
     private float salary;
-
     private Date startDate;
     private int empType;
+
+    @OneToOne
+    private Employee employeeId;
+    @OneToOne
+    private JobPosition jobPositionId;
     @OneToOne
     private Branch branchId;
     @OneToOne
     private BenefitPackage benefitPackageId;
-
     @OneToMany
     private List<Schedule> scheduleId;
+
 
     public Integer getId() {
         return id;

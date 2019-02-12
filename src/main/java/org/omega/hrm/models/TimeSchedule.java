@@ -17,12 +17,12 @@ public class TimeSchedule {
 
     private int scheduledFor;
     // 'it could be either weekly or monthly schedule',
-
+    private Date startTime;
+    private Date endTime;
     @ManyToOne
     private MonthlySchedule monthId;
 
-    private Date startTime;
-    private Date endTime;
+
 
     public Integer getId() {
         return id;

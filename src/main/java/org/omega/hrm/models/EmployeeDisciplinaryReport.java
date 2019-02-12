@@ -27,6 +27,8 @@ public class EmployeeDisciplinaryReport {
 
     private Date employeeNotifiedDate;
 
+
+
     public Integer getId() {
         return id;
     }

@@ -14,6 +14,13 @@ public class employmentHistory {
     @Id
     @GeneratedValue
     private Integer id;
+    @NotNull
+    private Date startDate;
+    private Date endDate;
+    private float salary;
+    private String empType;
+    private String causeOfEnd;
+    private String remark;
 
     @ManyToOne
     private Employee employeeId;
@@ -24,21 +31,12 @@ public class employmentHistory {
     @ManyToOne
     private BenefitPackage benefitPackageId;
 
-    @NotNull
-    private Date startDate;
-
-    private Date endDate;
-
-    private float salary;
-
-    private String empType;
-
-    private String causeOfEnd;
-
     @OneToOne
     private Employee responsibleForEndEmployeeId;
 
-    private String remark;
+
+
+
 
     public Integer getId() {
         return id;

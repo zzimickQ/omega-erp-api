@@ -11,19 +11,16 @@ public class InternalApplicants {
     @Id
     @GeneratedValue
     private Integer id;
-
-    @OneToOne
-    private Employee employee;
-
-    @ManyToOne
-   private Vacancy vacancy;
-
     private Date applyDate;
-
     private float interviewResult;
     private String interviewRemark;
     private float testResult;
     private boolean state;
+
+    @OneToOne
+    private Employee employee;
+    @ManyToOne
+    private Vacancy vacancy;
 
     public Integer getId() {
         return id;

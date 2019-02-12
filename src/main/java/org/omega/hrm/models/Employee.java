@@ -21,19 +21,16 @@ public class Employee {
     private String gender;
     private Date birthDate;
     private String email;
-
-    @ManyToOne
-    private PhoneNumbers primaryPhoneNumbers;
-
-    @ManyToOne
-    private Address primaryAddress;
-
     private Date firstRegisteredDate;
     private String meritalStatus;
     private String bankAccountNumber;
     private Integer entitledLeaveDays;
     private String nationality;
 
+    @ManyToOne
+    private PhoneNumbers primaryPhoneNumbers;
 
+    @ManyToOne
+    private Address primaryAddress;
 
 }

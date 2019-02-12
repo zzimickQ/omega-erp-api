@@ -16,12 +16,12 @@ public class TerminationRequest {
     @GeneratedValue
     private Integer id;
 
-    @OneToMany
-    private List<Employee> employee;
     private Date request_date;
     private String cause;
     private Date effective_date;
     private Integer state;
+    @OneToMany
+    private List<Employee> employee;
 
     public Integer getId() {
         return id;
