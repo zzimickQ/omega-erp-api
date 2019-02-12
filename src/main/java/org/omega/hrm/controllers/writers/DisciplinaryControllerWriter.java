@@ -1,7 +1,7 @@
 package org.omega.hrm.controllers.writers;
 
 import org.omega.hrm.models.CauseForDisciplinary;
-import org.omega.hrm.models.EmployeeDisciplinaryReports;
+import org.omega.hrm.models.EmployeeDisciplinaryReport;
 import org.omega.hrm.services.DisciplinaryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -37,7 +37,7 @@ public class DisciplinaryControllerWriter {
     @RequestMapping(value = "/disciplinary/report/{empId}", method = RequestMethod.POST)
     public ResponseEntity<?> createEmployeeDisciplinaryReportCause
             (@PathVariable Integer empId,
-             @RequestBody EmployeeDisciplinaryReports causeForDisciplinary){
+             @RequestBody EmployeeDisciplinaryReport causeForDisciplinary){
         return ResponseEntity.ok(disciplinaryService.createEmployeeDisciplinaryReport(empId, causeForDisciplinary));
     }
 
@@ -50,7 +50,7 @@ public class DisciplinaryControllerWriter {
     @RequestMapping(value = "/disciplinary/report/{empId}", method = RequestMethod.PUT)
     public ResponseEntity<?> editEmployeeDisciplinaryReport
             (@PathVariable Integer empId,
-             @RequestBody EmployeeDisciplinaryReports causeForDisciplinary){
+             @RequestBody EmployeeDisciplinaryReport causeForDisciplinary){
         return ResponseEntity.ok(disciplinaryService.editEmployeeDisciplinaryReport(empId, causeForDisciplinary));
     }
 }

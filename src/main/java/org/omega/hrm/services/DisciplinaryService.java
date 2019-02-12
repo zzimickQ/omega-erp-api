@@ -1,7 +1,7 @@
 package org.omega.hrm.services;
 
 import org.omega.hrm.models.CauseForDisciplinary;
-import org.omega.hrm.models.EmployeeDisciplinaryReports;
+import org.omega.hrm.models.EmployeeDisciplinaryReport;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -20,15 +20,15 @@ public abstract class DisciplinaryService {
     public abstract CauseForDisciplinary editCause(Integer empId,CauseForDisciplinary cause);
 
 
-    public abstract EmployeeDisciplinaryReports createEmployeeDisciplinaryReport
-            (Integer empId, EmployeeDisciplinaryReports employeeDisciplinaryReports);
+    public abstract EmployeeDisciplinaryReport createEmployeeDisciplinaryReport
+            (Integer empId, EmployeeDisciplinaryReport employeeDisciplinaryReport);
 
-    public abstract List<EmployeeDisciplinaryReports> getEmployeeDisciplinaryReport(Integer empID);
+    public abstract List<EmployeeDisciplinaryReport> getEmployeeDisciplinaryReport(Integer empID);
 
     public abstract void deleteEmployeeDisciplinaryReport(Integer empId);
 
-    public abstract EmployeeDisciplinaryReports editEmployeeDisciplinaryReport
-            (Integer empId, EmployeeDisciplinaryReports employeeDisciplinary);
+    public abstract EmployeeDisciplinaryReport editEmployeeDisciplinaryReport
+            (Integer empId, EmployeeDisciplinaryReport employeeDisciplinary);
 
 
 }

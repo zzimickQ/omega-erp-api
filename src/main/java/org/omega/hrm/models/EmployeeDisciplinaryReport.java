@@ -11,7 +11,7 @@ import java.util.List;
  * Created by Kass on 12/27/2018.
  */
 @Entity
-public class EmployeeDisciplinaryReports {
+public class EmployeeDisciplinaryReport {
 
     @Id
     @GeneratedValue
